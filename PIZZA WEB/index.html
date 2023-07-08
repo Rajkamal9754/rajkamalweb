@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Pizza House</title>
+    <link rel="stylesheet" href="for style.css" />
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="active" href="#HOME">Home</a>
+      <a id="registered" onclick="registered()" herf="#About Us">About us</a>
+      <a href="#News">News</a>
+      <a href="#Shop">Shop</a>
+      <a href="#Pages">Pages</a>
+      <a href="#Contact Us">Contact Us</a>
+    </div>
+    <div class="logo">
+      <img src="logo.jpg" alt="" srcset="" height="50px" />
+    </div>
+
+    <div class="mainimage">
+      <img src="main1.jpg" alt="pizza web" height="290px" width="899px" />
+    </div>
+
+    <div class="menu">
+      <h2>OUR MENU</h2>
+      <div class="burgers">
+        <img src="burgers.jpg" alt="burger image" srcset="" height="150px" />
+        <br />
+        $200
+        <button id="btn" onclick="btnclick()">Add</button>
+      </div>
+      <div class="desserts">
+        <img srcset="desserst.jpg" height="150px" />
+      </div>
+      <div class="drinks">
+        <img src="drinks.jpg" alt="" srcset="" height="150px" />
+        <br />
+        $350
+        <button class="first">Add</button>
+      </div>
+      <div class="seafood">
+        <img src="seafood.jpg" alt="" srcset="" height="150px" />
+        <br />
+        $500
+        <button id="now" onclick="clicked()">Add</button>
+      </div>
+    </div>
+    <div class="pizza-cart">
+      <h2>PIZZAA MENU</h2>
+      <div class="pizza1">
+        <img src="pizza1.jpg" alt="" srcset="" />
+        <br />
+        $800
+        <button class="pizzaahut" onclick="allclick()">Add</button>
+      </div>
+      <div class="pizza3">
+        <img src="pizza3.jpg" alt="" srcset="" />
+        <br />
+        $900 <button class="pizzahut">Add</button>
+      </div>
+      <div class="pizza4">
+        <img src="pizza4.jpg" alt="" srcset="" />
+        <br />
+        $1000<button class="pizzahut">Add</button>
+      </div>
+      <div class="pizza5">
+        
+    <img src="pizza5.jpg" alt="" srcset="" height="150px" />
+        <br />
+        $650 <button class="pizzahut">Add</button>
+      </div>
+      <div class="pizza6">
+        <img src="pizza6.jpg" alt="" srcset="" height="150px" />
+        <br />
+        $850 <button class="pizzahut">Add</button>
+      </div>
+    </div>
+    <br>
+    <br>
+
+    <h2> Follow Us ..</h2>
+    <div class="footer">
+      <img src="footer.jpg" alt=""  height="370px">
+    </div>
+  </body>
+    
+  <script>
+    function btnclick() {
+      alert("BURGER ADDED TO CART");
+      confirm("Proceed order and make payment? UPI 9174771991@RAJKAMAL");
+      confirm("wait for a moment...");
+      confirm("congratulations your order has been placed");
+    }
+    function clicked() {
+      alert("SEAFOOD ADDED TO CART");
+      confirm("Proceed order and make payment to  UPI 9174771991@RAJKAMAL ??");
+      confirm("wait for a moment...");
+      confirm("congratulations!!! your order has been placed");
+    }
+    function allclick() {
+      alert("Pizza Addded to cart");
+      confirm("Proceed order and make payment to  UPI 9174771991@RAJKAMAL ??");
+      confirm("wait for a moment...");
+      confirm("congratulations!!! your order has been placed");
+    }
+    
+    function registered() {
+      alert("Page is Loading......");
+    }
+    function ohk() {
+      alert("Thank u for Feedback.");
+    }
+
+    let array = [21, 34, 56, 78];
+    for (let i = 0; i < array.length; i++) {
+      array1 = array * 2;
+    }
+    console.log(array1);
+
+    let sum = (a, b) => a + b;
+
+    console.log(sum(2, 3));
+  </script>
+</html>

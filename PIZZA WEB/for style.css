@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Responsive styles */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.toplogo,
+.topnav {
+  display: flex;
+  justify-content: center;
+}
+
+.topnav {
+  background-color: #333;
+}
+
+.topnav a {
+  color: #cebb14;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.topnav a:hover {
+  background-color: aqua;
+  color: rgb(6, 127, 132);
+}
+
+.topnav a.active {
+  background-color: blue;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mainimage {
+  animation-name: slider;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+}
+
+@keyframes slider {
+  0% {
+    background-image: url("main2.jpg");
+  }
+
+  100% {
+    background-image: url("main1.jpg");
+  }
+}
+
+.menu {
+  background-color: #efef;
+}
+
+h2 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.burgers,
+.desserts,
+.drinks,
+.seafood {
+  text-align: center;
+  margin-top: 15px;
+  padding: 0 10px;
+}
+
+.pizza-cart {
+  background-color: #efef;
+}
+
+.pizza-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  overflow-x: auto;
+}
+
+.pizza-section img {
+  max-width: calc(25% - 10px);
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .pizza-section {
+    flex-direction: column;
+  }
+}
